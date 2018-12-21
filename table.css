@@ -1,0 +1,63 @@
+/********************************
+*      Equal column height      *
+*********************************/
+
+.container{
+  display: table;
+  border-spacing: 1em;
+}
+
+div{
+  display: table-cell;
+  width: 33%;
+  background-color: #ffede1;
+  position: relative;
+}
+
+p{
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+/**************************************************
+*      Element sticks to bottom of container      *
+***************************************************/
+a{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/**************************************************
+*    vertical align center (position relative)    *
+***************************************************/
+
+div:first-child{
+  vertical-align: middle
+}
+
+/**************************************************
+*    vertical align center (position absolute)    *
+***************************************************/
+
+div:last-child a{
+   margin: auto;
+  position: absolute;
+  height: 20px;
+  top: 50%; left: 0; bottom: 50%; right: 0;
+}
+
+/************************
+*        Styling        *
+*************************/
+
+.some-button{
+  text-decoration: none;
+  font-family: sans-serif;
+  border: 2px solid #eb00ff;
+  color: #eb00ff;
+  padding: 5px 15px;
+  text-align: center;
+  background-color: #facaca;
+}

@@ -1,0 +1,56 @@
+.container{
+  display: flex;
+}
+
+div{
+
+  width: 33%;
+  background-color: #ffede1;
+  margin: 1em;
+  position: relative;
+}
+
+p{
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+/**************************************************
+*      Element sticks to bottom of container      *
+***************************************************/
+
+a{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/**************************************************
+*    vertical align center (position relative)    *
+***************************************************/
+
+div:last-child{
+  display: flex;
+/*  align-content: center;*/
+}
+
+div:last-child p{
+ align-self: center;
+/* align-self: flex-end;*/
+}
+
+/************************
+*        Styling        *
+*************************/
+
+.some-button{
+  text-decoration: none;
+  font-family: sans-serif;
+  border: 2px solid #eb00ff;
+  color: #eb00ff;
+  padding: 5px 15px;
+  text-align: center;
+  background-color: #facaca;
+}
+
